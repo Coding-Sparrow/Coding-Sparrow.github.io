@@ -41,24 +41,9 @@
       <p class="muted">Things I've made or am working on.</p>
     </div>
 
-    <section class="group">
-      <div class="group-title" aria-hidden="true">Current Focus</div>
-      <h2 class="sr-only">Current Focus</h2>
-      <div class="grid">
-        <a class="project" href="https://px0.ai">
-          <div class="emoji">⚡</div>
-          <div>
-            <div class="name">px0</div>
-            <div class="desc">A read-only browser IDE for code review. Boots in under 1&nbsp;ms, uses ~20&nbsp;MB of RAM, and has symbol-level navigation and deep search.</div>
-            <div class="meta"><span>JavaScript</span><span data-stars="px0"></span></div>
-          </div>
-        </a>
-      </div>
-    </section>
 
     <section class="group">
-      <div class="group-title" aria-hidden="true">Omarchy Plugins</div>
-      <h2 class="sr-only">Omarchy Plugins</h2>
+      <h2 class="group-title">Omarchy Plugins</h2>
       <div class="grid">
         <a class="project" href="https://github.com/Coding-Sparrow/omarchy-systempulse">
           <div class="emoji">📈</div>
@@ -80,8 +65,7 @@
     </section>
 
     <section class="group">
-      <div class="group-title" aria-hidden="true">Vert.x</div>
-      <h2 class="sr-only">Vert.x &amp; Reactive Java</h2>
+      <h2 class="group-title">Vert.x &amp; Reactive Java</h2>
       <div class="grid">
         <a class="project" href="https://github.com/Coding-Sparrow/locus-location-simulator">
           <div class="emoji">📍</div>
@@ -107,6 +91,36 @@
             <div class="meta"><span>Java</span><span data-stars="vertx-service-proxy-codegen-issue"></span></div>
           </div>
         </a>
+      </div>
+    </section>
+    <section class="group">
+      <h2 class="group-title">Contributions</h2>
+      <p class="group-note">Security reports and patches for other open source projects.</p>
+      <div class="grid">
+        <div class="project">
+          <div class="emoji">🔐</div>
+          <div>
+            <div class="name"><a href="https://github.com/px0-ai/px0/issues/46">px0 · unsigned self-update</a></div>
+            <div class="desc">Reported a critical bug: the self-updater downloaded and ran binaries without verifying them. Fixed upstream.</div>
+            <div class="meta"><span>Security report</span><span>px0-ai/px0</span></div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="emoji">🧯</div>
+          <div>
+            <div class="name"><a href="https://github.com/px0-ai/px0/issues/75">px0 · XSS via /api/raw</a></div>
+            <div class="desc">Reported that workspace HTML and SVG files were served as documents on the px0 origin, and sent a <a href="https://github.com/px0-ai/px0/pull/76">patch</a>. The fix is now in master.</div>
+            <div class="meta"><span>Security report + patch</span><span>px0-ai/px0</span></div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="emoji">🛡️</div>
+          <div>
+            <div class="name"><a href="https://github.com/px0-ai/px0/issues/77">px0 · Content-Security-Policy</a></div>
+            <div class="desc">Reported that the local UI had no CSP, and sent a <a href="https://github.com/px0-ai/px0/pull/78">patch</a> adding one to every HTTP response. The fix is now in master.</div>
+            <div class="meta"><span>Security report + patch</span><span>px0-ai/px0</span></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

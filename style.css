@@ -162,30 +162,25 @@ code {
 
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-.group { margin-top: 3.5rem; position: relative; }
+.group { margin-top: 4rem; }
 
 .group-title {
-  position: absolute;
-  top: -2.25rem;
-  left: -0.5rem;
-  font-size: 5.5rem;
+  font-size: clamp(2.75rem, 7vw, 4.5rem);
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.05;
+  margin: 0 0 1rem;
   color: transparent;
   -webkit-text-stroke: 1.5px #aaa;
-  opacity: 0.25;
-  pointer-events: none;
+  opacity: 0.35;
   user-select: none;
-  white-space: nowrap;
 }
 
+.group-note { margin: -0.5rem 0 1rem; font-size: 0.925rem; color: var(--fg-light); }
+
 .grid {
-  position: relative;
-  margin-top: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 0.5rem;
-  padding-top: 1.5rem;
 }
 
 .project {
@@ -220,7 +215,6 @@ footer {
   nav { gap: 0.9rem; }
   nav .label { display: none; }
   h1 { font-size: 1.9rem; }
-  .group-title { font-size: 3.75rem; top: -1.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

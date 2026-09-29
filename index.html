@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Ravat Tailor</title>
-  <meta name="description" content="Ravat Tailor — backend engineer. Java, Vert.x, reactive systems, and small fast tools." />
+  <meta name="description" content="Ravat Tailor, backend engineer. Java, Vert.x, reactive systems, Omarchy plugins, and open source security fixes." />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Ravat Tailor" />
@@ -52,10 +52,12 @@
     </p>
 
     <p>
-      Lately I've been working on <a href="https://px0.ai"><b>px0</b></a>, a read-only IDE that runs in the browser.
-      Agents write more of the code now, so I spend more of my time reviewing it.
-      px0 boots in under a millisecond and uses about 20&nbsp;MB of RAM, so there's
-      nothing to wait for between a diff and its definitions.
+      I also look for security bugs in tools I use every day. For
+      <a href="https://github.com/px0-ai/px0">px0</a>, a browser IDE for reviewing code, I reported an
+      <a href="https://github.com/px0-ai/px0/issues/46">unsigned self-update</a>, an
+      <a href="https://github.com/px0-ai/px0/issues/75">XSS through <code>/api/raw</code></a>, and a
+      <a href="https://github.com/px0-ai/px0/issues/77">missing Content-Security-Policy</a>, and sent patches for the last two.
+      All three are fixed upstream.
     </p>
 
     <p>
